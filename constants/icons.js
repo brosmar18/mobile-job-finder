@@ -5,7 +5,7 @@ import filter from '../assets/icons/filter.png';
 import left from '../assets/icons/left.png';
 import heartOutline from '../assets/icons/heart-ol.png';
 import share from '../assets/icons/share.png';
-
+import location from '../assets/icons/location.png';
 
 export default {
     heart,
@@ -14,5 +14,6 @@ export default {
     filter,
     left,
     heartOutline,
-    share
+    share,
+    location
 };
