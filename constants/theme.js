@@ -9,3 +9,9 @@ const COLORS = {
     white: "#F3F4F8",
     lightWhite: "#FAFAFC",
 };
+
+const FONT = {
+    regular: "DMRegular",
+    medium: "DMMedium",
+    bold: "DMBold",
+};
