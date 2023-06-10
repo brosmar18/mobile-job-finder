@@ -47,3 +47,5 @@ const SHADOWS = {
         elevation: 5,
     },
 };
+
+export { COLORS, FONT, SIZES, SHADOWS };
