@@ -4,6 +4,7 @@ import search from '../assets/icons/search.png';
 import filter from '../assets/icons/filter.png';
 import left from '../assets/icons/left.png';
 import heartOutline from '../assets/icons/heart-ol.png';
+import share from '../assets/icons/share.png';
 
 
 export default {
@@ -12,5 +13,6 @@ export default {
     search,
     filter,
     left,
-    heartOutline
+    heartOutline,
+    share
 };
