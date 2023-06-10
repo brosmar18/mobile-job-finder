@@ -3,6 +3,7 @@ import menu from '../assets/icons/menu.png';
 import search from '../assets/icons/search.png';
 import filter from '../assets/icons/filter.png';
 import left from '../assets/icons/left.png';
+import heartOutline from '../assets/icons/heart-ol.png';
 
 
 export default {
@@ -10,5 +11,6 @@ export default {
     menu,
     search,
     filter,
-    left
+    left,
+    heartOutline
 };
