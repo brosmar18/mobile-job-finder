@@ -6,6 +6,7 @@ import { COLORS, icons, images, SIZES } from '../constants';
 import {
     Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome
 } from '../components';
+import NearbyJobs from '../components/home/nearby/Nearbyjobs';
 
 
 const Home = () => {
@@ -23,9 +24,25 @@ const Home = () => {
                 headerRight: () => (
                     <ScreenHeaderBtn iconUrl={images.profile} dimension='100%' />
                 ),
-                headerTitle: "",
-            }}
-        />
+                headerTitle: "", }}
+            />
+
+            <ScrollView showsVerticalScrollIndicator={false}>
+                <View
+                    style={{
+                        flex: 1,
+                        padding: SIZES.medium,
+                    }}
+                >
+
+                    <Welcome
+
+                    />
+
+                    <Popularjobs />
+                    <Nearbyjobs />
+                </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }
