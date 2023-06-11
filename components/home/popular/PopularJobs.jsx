@@ -14,9 +14,13 @@ import PopularJobCard from '../../common/cards/popular/PopularJobCard';
 
 
 const PopularJobs = () => {
+    const router = useRouter();
+
     return (
-        <View>
-            <Text>Popular Jobs</Text>
+        <View style={styles.container}>
+            <View style={styles.header}>
+                <Text style={styles.headerTitle}>Popular Jobs</Text>
+            </View>
         </View>
     )
 }
