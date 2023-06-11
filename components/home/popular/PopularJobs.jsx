@@ -15,15 +15,26 @@ import PopularJobCard from '../../common/cards/popular/PopularJobCard';
 
 const PopularJobs = () => {
     const router = useRouter();
+    const isLoading = false;
+    const error = false;
 
     return (
         <View style={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>Popular Jobs</Text>
+                <TouchableOpacity>
+                    <Text style={styles.headerBtn}>Show All</Text>
+                </TouchableOpacity>
             </View>
-            <TouchableOpacity>
-                <Text style={styles.headerBtn}>Show All</Text>
-            </TouchableOpacity>
+            <View style={styles.cardsContainer}>
+                {isLoading ? (
+                    <ActivityIndicator size="large" color={COLORS.primary} />
+                ) : error ? (
+                    <Text>Something went wrong</Text>
+                ) : (
+                    <FlatList />
+                )}
+            </View>
         </View>
     )
 }
