@@ -11,6 +11,7 @@ import {
 import styles from './popularJobs.style';
 import { COLORS, SIZES } from '../../../constants';
 import PopularJobCard from '../../common/cards/popular/PopularJobCard';
+import useFetch from '../../../hook/useFetch';
 
 
 const PopularJobs = () => {
