@@ -7,9 +7,12 @@ import {
 
 import styles from './popularJobCard.style';
 
-const PopularJobCard = () => {
+const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity
+            style={styles.container(selectedJob, item)}
+            onPress={() => handleCardPress(item)}
+        >
 
         </TouchableOpacity>
     )
