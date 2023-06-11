@@ -14,6 +14,8 @@ import { icons, SIZES } from '../../../constants';
 
 const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
     const router = useRouter();
+
+
     return (
         <View>
             <View style={styles.container}>
@@ -25,6 +27,8 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
                     <TextInput
                         style={styles.searchInput}
                         placeholder='What are you looking for?'
+                        value={searchTerm}
+                        onChange={(text) => setSearchTerm(text)}
                     >
 
                     </TextInput>
