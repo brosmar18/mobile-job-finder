@@ -13,7 +13,7 @@ const Layout = () => {
         });
 
         const onLayoutRootView = useCallback(async () => {
-            if(dontsLoaded) {
+            if(fontsLoaded) {
                 await SplashScreen.hideAsync();
             }
         }, [fontsLoaded])
