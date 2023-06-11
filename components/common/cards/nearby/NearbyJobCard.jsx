@@ -1,7 +1,12 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import {
+    View,
+    Text,
+    TouchableOpacity,
+    Image
+} from 'react-native';
 
 import styles from './nearByJobCard.style';
+import { checkImageURL } from '../../../../utils';
 
 const NearbyJobCard = () => {
     return (
