@@ -20,9 +20,12 @@ const Welcome = () => {
                 <Text style={styles.userName}>Hello Bryan</Text>
                 <Text style={styles.welcomeMessage}>Find your dream job Today</Text>
             </View>
-            <View>
-                <View>
-                    <TextInput>
+            <View style={styles.searchContainer}>
+                <View style={styles.searchWrapper}>
+                    <TextInput
+                        style={styles.searchInput}
+                        placeholder='What are you looking for?'
+                    >
 
                     </TextInput>
                 </View>
