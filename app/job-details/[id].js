@@ -1,3 +1,4 @@
+import { useCallback, useState } from 'react';
 import {
     Text,
     View,
@@ -27,6 +28,10 @@ const JobDetails = () => {
         job_id: params.job_id
     })
 
+    const [refreshing, setRefreshing] = useState(false);
+
+    const onRefresh = () => {}
+
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -48,6 +53,27 @@ const JobDetails = () => {
                     headerTitle: "",
                 }}
             />
+
+            <>
+                <ScrollView
+                showsHorizontalScrollIndicator={false}
+                refreshControl={
+                    <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}>
+
+                    {isLoading ? (
+                        <ActivityIndicator size='large' color={COLORS.primary} />
+                    ) : error ? (
+                        <Text>Something went wrong</Text>
+                    ) : data.length === 0 ? (
+                        <Text>No data available</Text>
+                    ) : (
+                        <View style={{ padding: SIZES.medium, paddingBottom: 100 }}>
+                            <Company />
+                            <JobTabs />
+                        </View>
+                    )}
+                </ScrollView>
+            </>
         </SafeAreaView>
     );
 };
