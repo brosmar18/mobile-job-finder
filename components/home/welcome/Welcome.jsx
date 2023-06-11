@@ -29,10 +29,11 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
                         placeholder='What are you looking for?'
                         value={searchTerm}
                         onChange={(text) => setSearchTerm(text)}
-                    >
-
-                    </TextInput>
+                    />
                 </View>
+                <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
+
+                </TouchableOpacity>
             </View>
         </View>
     )
