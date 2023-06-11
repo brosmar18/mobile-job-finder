@@ -48,3 +48,6 @@ const useFetch = (endpoint) => {
     return { data, isLoading, error, refetch };
 
 };
+
+
+export default useFetch;
