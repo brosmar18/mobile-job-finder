@@ -60,6 +60,9 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
                             >{item}</Text>
                         </TouchableOpacity>
                     )}
+                    keyExtractor={(item) => item}
+                    contentContainerStyle={{ columnGap: SIZES.small }}
+                    horizontal
                 />
 
             </View>
