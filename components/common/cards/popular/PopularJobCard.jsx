@@ -1,13 +1,17 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import {
+    View,
+    Text,
+    TouchableOpacity,
+    Image
+} from 'react-native';
 
 import styles from './popularJobCard.style';
 
 const PopularJobCard = () => {
     return (
-        <View>
-            <Text>Popular Job Card</Text>
-        </View>
+        <TouchableOpacity>
+
+        </TouchableOpacity>
     )
 }
 
