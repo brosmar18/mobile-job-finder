@@ -20,6 +20,13 @@ const Welcome = () => {
                 <Text style={styles.userName}>Hello Bryan</Text>
                 <Text style={styles.welcomeMessage}>Find your dream job Today</Text>
             </View>
+            <View>
+                <View>
+                    <TextInput>
+
+                    </TextInput>
+                </View>
+            </View>
         </View>
     )
 }
