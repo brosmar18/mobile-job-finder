@@ -46,7 +46,7 @@ const PopularJobs = () => {
                 )}
             </View>
         </View>
-    )
-}
+    );
+};
 
 export default PopularJobs;
