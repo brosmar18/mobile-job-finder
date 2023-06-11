@@ -18,7 +18,15 @@ const Company = ({ companyLogo, jobTitle, companyName, location }) => {
                     style={styles.logoImage}
                 />
             </View>
+            <View style={styles.jobTitle}>
+                <Text style={styles.jobTitle}>{jobTitle}</Text>
+            </View>
+
+            <View style={styles.companyInfoBox}>
+                <Text style={styles.companyName}>{companyName}</Text>
+            </View>
         </View>
+    )
 }
 
 export default Company
