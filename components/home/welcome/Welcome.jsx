@@ -16,8 +16,8 @@ const Welcome = () => {
     const router = useRouter();
     return (
         <View>
-            <View>
-                <Text>Hello Bryan</Text>
+            <View style={styles.container}>
+                <Text style={styles.userName}>Hello Bryan</Text>
             </View>
         </View>
     )
